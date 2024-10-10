@@ -1,0 +1,55 @@
+# userInput = input("Enter the username ")
+# passwordInput = input("Enter the password")
+# time = 3
+# while True:
+#     if userInput == "admin" and passwordInput == "password":
+#         print ("entry")
+#         break
+#     else:
+#         print("unsuccessfull")
+#         time -=1
+#         continue
+# user_input = int(input("Enter the number of stars:"))
+# for outer in range(1,user_input):
+#     for inner in range(outer+1):
+#         # print(f"Outter value: {outer} inner value{inner}")
+#         print("*",end="")
+#     print("")
+
+
+# for i in range(1,10,2):
+#     print(i)
+
+
+# has context menu
+# index = 0
+# while index < 5:
+#     print("hello world")
+#     index += 1
+
+
+# outter = 0
+# while outter < 5:
+#     inner = 0
+#     while inner < outter+1:
+#         print("*",end="")        
+#         inner +=1
+#     print("")
+#     outter += 1
+# for index in range(1, 21):
+#     if index % 2 ==0:
+#         print(index)
+# n = 4
+# def factorial(n):
+#        if n <2:
+#         return 1
+#        else :
+#          return n*factorial(n-1)
+# print(factorial(n))  
+
+# number = int(input("enter a number"))
+# factorial = 1
+# while number !=1:
+#     factorial = factorial * number
+#     number -= 1
+#     print(factorial)
