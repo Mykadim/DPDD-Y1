@@ -1,0 +1,87 @@
+# try:
+#     userinput01 = int(input("Enter the value 01:"))
+#     userinput02 = int(input("Enter the value 02:"))
+#     a = userinput01/userinput02
+#     print(a)
+# except ValueError as ve:
+#     print("Error:", ve)
+#     #print("The input must be intrger")#raising exception manually
+# except ZeroDivisionError as zde:
+#     print("Error:", zde)
+#     #print("The second input not be zero")
+# finally:
+#     print("Program works perfectly")
+# age = int(input("Enter your age"))
+# if age < 0:
+#     print("Age cannot be negative")
+# try:
+#     age = int(input("Enter your age"))
+#     if age < 0:
+#         print("Age cannot be negative")
+# except ValueError as e:
+#     print(f"Error:{e}")
+
+
+# try:
+#     input_string = "String Value"
+#     convert_type = int(input_string)
+# except TypeError: 
+#     print("Error")
+
+
+
+# try:
+#     userinput01 = input("Enter a number")
+    
+# except ValueError as te:
+#     print("Error:", te)
+# finally:
+#     print("Nice code")
+# userinput = input("Enter a number")
+# while True:
+#     if userinput.isdigit():
+#         print("Number")
+#         break
+#     else:
+#         print("Integers only")
+#         userinput = input("Enter a number")
+#         continue
+# try:
+#     userinput = int(input("Enter a number"))
+#     if userinput < 0:
+#         print("Only positive numbers")
+# except ValueError as e:
+#     print("Error:", e)
+#
+
+
+def fn_menu():
+    flag = "y"
+    while flag == "y":
+        menu_decr = """
+        01 - Create File
+        02 - second option
+        03 - third option
+        04 - fourth option
+        05 - Fifth option
+    """
+        print(menu_decr)
+        option_number = input("Enter the option ")
+        if option_number.isdigit() == True:
+            option_number = int(option_number)
+            if option_number == 1:
+                userInput = input("Enter the file name to create")
+                file = open(userInput,"x")
+            elif option_number == 2:
+                print("You select the option 02")
+            elif option_number == 3:
+                print("You select the option 03") 
+            elif option_number == 4:
+                print("You select the option 04")  
+            elif option_number == 5:
+                print("You select the option 05") 
+                flag = "n" 
+            else:
+                print("invalid")
+        else:
+            print("Please input the integer value")
